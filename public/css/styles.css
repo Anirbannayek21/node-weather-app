@@ -43,3 +43,8 @@ main{
     border-radius: 5%;
     font-size: 2rem;
 }
+
+#img1{
+    margin-top: 15% !important;
+    border-radius: 30%;
+}
