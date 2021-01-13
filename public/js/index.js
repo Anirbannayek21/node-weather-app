@@ -29,7 +29,7 @@ weatherForm.addEventListener('submit',(event)=>{
 
     loc.textContent = 'loading...'
 
-    fetch('http://localhost:3000/weather?address='+encodeURIComponent(address)).then((response) => {
+    fetch('/weather?address='+encodeURIComponent(address)).then((response) => {
         response.json().then((data) => {
             if(data.error){
                 error.textContent = "error : location not found"
