@@ -34,7 +34,7 @@ app.use(express.static(publicDirectoryPath))
 // render index.hbs from loction of view(viewspath)
 app.get('',(req,res)=>{
     res.render('index',{
-        title : "Weather-APP",
+        title : "Weather APP",
         name : "Anirban"
     })
 })
