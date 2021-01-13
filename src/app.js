@@ -10,7 +10,8 @@ console.log(__dirname)
 // return the path of current file
 console.log(__filename)
 const app = express()
-const port = process.env.PORT
+
+const port = process.env.PORT || 3000
 
 // create the path to the directory
 const publicDirectoryPath = path.join(__dirname,'../public')

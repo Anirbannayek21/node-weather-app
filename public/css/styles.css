@@ -12,6 +12,8 @@ h1{
 }
 main{
     flex-grow: 1;
+    width: 50%;
+    margin: auto;
 }
 .navbar-brand{
     font-size: 2rem !important;

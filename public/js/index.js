@@ -17,7 +17,7 @@ nameform.addEventListener('submit',(e)=>{
     e.preventDefault()
 
     const userName = inputname.value
-
+    nameform.remove()
     name1.textContent = 'Hello , ' + userName
     welcome.textContent = "Welcome Here"
 })
@@ -27,7 +27,12 @@ weatherForm.addEventListener('submit',(event)=>{
 
     const address = searchplace.value
 
-    loc.textContent = 'loading...'
+    error.textContent = "loading..."
+    loc.textContent = ''
+    description.textContent = ''
+    temperature.textContent = ''
+    humidity.textContent = ''
+    
 
     fetch('/weather?address='+encodeURIComponent(address)).then((response) => {
         response.json().then((data) => {
