@@ -67,7 +67,7 @@ app.get('/weather',(req,res)=>{
 
     weatherReport.weather(address,(error,forcast)=>{
         if(error){
-            return res.send({error})
+            return res.render('error')
         }
         else{
             return res.send(
